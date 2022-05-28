@@ -13,11 +13,6 @@ const Anchor = styled.a`
 	transition-property: background-color color;
 	outline: none;
 	color: ${props => props.theme.colors.primary.main};
-	:hover,
-	:focus {
-		background-color: ${props => props.theme.colors.primary.main};
-		color: white;
-	}
 	margin: 0 8px;
 	padding: 8px 12px;
 	border-radius: 8px;

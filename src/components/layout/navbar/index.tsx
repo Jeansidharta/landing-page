@@ -9,7 +9,7 @@ const Root = styled.div`
 	height: 10vh;
 	width: 100%;
 	background-color: ${({ theme }) => theme.colors.primary.lighter};
-	box-shadow: ${({ theme }) => theme.shadows.layout.large.soft.normal};
+	box-shadow: ${({ theme }) => theme.shadows.navbar};
 	display: flex;
 	justify-content: space-between;
 	padding: 8px 32px;

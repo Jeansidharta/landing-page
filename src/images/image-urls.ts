@@ -1,5 +1,6 @@
-import logo from './logo.svg';
-import logoPng from './logo.png';
+import logo from './tech_viz_logo.svg';
+import logoPng from './tech_viz_logo.png';
+import logoSquaredPng from './tech_viz_logo_squared.png';
 
 const ImageURLs = {
 	logo,
@@ -10,6 +11,7 @@ const ImageURLs = {
 	 * as the svg version is lighter, and therefore preferable.
 	 */
 	logoPng,
+	logoSquaredPng,
 };
 
 export default ImageURLs;
