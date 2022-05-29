@@ -4,13 +4,14 @@ import styled from 'styled-components';
 import Navbar from '../../components/layout/navbar';
 import ImageURLs from '../../images/image-urls';
 import { deployedURLHome } from '../../constants/deployed-url';
+import Header from './header';
+import Benefits from './benefits';
+import Prices from './prices';
 
 const Main = styled.div`
-	min-height: 100vh;
-	padding: 16px;
 	display: flex;
 	flex-direction: column;
-	row-gap: 24px;
+	background-color: ${({ theme }) => theme.colors.white.background};
 `;
 
 /**
@@ -35,7 +36,11 @@ export default function Home() {
 				{/* <meta name="description" content="My personal description" /> */}
 			</Head>
 			<Navbar />
-			<Main></Main>
+			<Main>
+				<Header />
+				<Benefits />
+				<Prices />
+			</Main>
 		</>
 	);
 }

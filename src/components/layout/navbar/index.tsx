@@ -15,7 +15,7 @@ const Root = styled.div`
 	padding: 8px 32px;
 `;
 
-const Logo = styled(Images.main)`
+const Logo = styled(Images.Logo)`
 	height: 100%;
 	width: auto;
 	cursor: pointer;

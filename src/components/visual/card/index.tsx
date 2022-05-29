@@ -8,7 +8,8 @@ const Card = styled.div`
 	display: grid;
 	grid-template-columns: 100%;
 	row-gap: 32px;
-	background-color: ${({ theme }) => theme.colors.white.background};
+	background-color: ${({ theme }) => theme.colors.white.full};
+	box-shadow: ${({ theme }) => theme.shadows.card};
 	border-radius: 12px;
 	color: ${({ theme }) => theme.colors.primary.main};
 	max-width: 650px;

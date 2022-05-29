@@ -37,14 +37,14 @@ const EMPTY_COLOR = ``;
 
 export const DefaultThemeColors = {
 	primary: {
-		main: EMPTY_COLOR,
+		main: '#398aff',
 		dark: EMPTY_COLOR,
 		darker: EMPTY_COLOR,
 		light: EMPTY_COLOR,
 		lighter: EMPTY_COLOR,
 	},
 	secondary: {
-		main: EMPTY_COLOR,
+		main: '#ADC6EA',
 		dark: EMPTY_COLOR,
 		darker: EMPTY_COLOR,
 		light: EMPTY_COLOR,
