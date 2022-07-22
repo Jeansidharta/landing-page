@@ -1,12 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
 import styled from 'styled-components';
-import Navbar from '../../components/layout/navbar';
 import ImageURLs from '../../images/image-urls';
 import { deployedURLHome } from '../../constants/deployed-url';
 import Header from './header';
-import Benefits from './benefits';
-import Prices from './prices';
 
 const Main = styled.div`
 	display: flex;
@@ -35,11 +32,10 @@ export default function Home() {
 				{/* TODO - Set custom page description */}
 				{/* <meta name="description" content="My personal description" /> */}
 			</Head>
-			<Navbar />
 			<Main>
 				<Header />
-				<Benefits />
-				<Prices />
+				{/* <Benefits /> */}
+				{/* <Prices /> */}
 			</Main>
 		</>
 	);

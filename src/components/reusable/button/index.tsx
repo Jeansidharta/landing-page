@@ -12,7 +12,7 @@ const Root = styled.button<{
 	textColor: ColorDescriptor;
 }>`
 	width: ${({ fullWidth }) => (fullWidth ? `100%` : `max-content`)};
-	padding: 4px 16px;
+	padding: 35px;
 	text-align: center;
 	align-items: center;
 	display: flex;
@@ -21,7 +21,7 @@ const Root = styled.button<{
 	transition: 200ms;
 	cursor: pointer;
 	border-radius: 4px;
-	box-shadow: ${props => props.theme.shadows.button};
+	font-size: 25px;
 	background-color: ${({ backgroundColor, theme }) =>
 		typeof backgroundColor === `string` ? backgroundColor : backgroundColor(theme)};
 	color: ${({ textColor, theme }) =>
@@ -57,8 +57,8 @@ const Button: FC<
 > = ({
 	fullWidth = false,
 	hoverScaleOffset = 0.1,
-	backgroundColor = (theme: DefaultTheme) => theme.colors.action.main,
-	textColor = `rgba(0, 0, 0, 0.8)`,
+	backgroundColor = (theme: DefaultTheme) => theme.colors.primary.main,
+	textColor = (theme: DefaultTheme) => theme.colors.white.full,
 	ref,
 	children,
 	isLoading,

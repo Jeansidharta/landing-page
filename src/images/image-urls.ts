@@ -1,6 +1,7 @@
 import logo from './tech_viz_logo.svg';
 import logoPng from './tech_viz_logo.png';
 import logoSquaredPng from './tech_viz_logo_squared.png';
+import CapeIlustration from './cape-ilustration.svg';
 
 const ImageURLs = {
 	logo,
@@ -12,6 +13,7 @@ const ImageURLs = {
 	 */
 	logoPng,
 	logoSquaredPng,
+	CapeIlustration,
 };
 
 export default ImageURLs;

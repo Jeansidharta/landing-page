@@ -70,6 +70,10 @@ const Images = {
 		imageData: ImageURLs.logo,
 		alt: alt || `Logo da Tech Viz`,
 	}))``,
+	CapeIlustration: styled(BaseImage).attrs(({ alt }) => ({
+		imageData: ImageURLs.CapeIlustration,
+		alt: alt || `Ilustracão da capa do software`,
+	}))``,
 };
 
 export default Images;

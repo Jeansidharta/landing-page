@@ -65,7 +65,7 @@ export const DefaultThemeColors = {
 		darker: EMPTY_COLOR,
 	},
 	white: {
-		background: `#eeeeee`,
+		background: `#F5F5F5`,
 		full: `white`,
 	},
 
