@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import ImageURLs from '../../images/image-urls';
 import { deployedURLHome } from '../../constants/deployed-url';
 import Header from './header';
+import Benefits from './benefits';
 
 const Main = styled.div`
 	display: flex;
@@ -34,7 +35,7 @@ export default function Home() {
 			</Head>
 			<Main>
 				<Header />
-				{/* <Benefits /> */}
+				<Benefits />
 				{/* <Prices /> */}
 			</Main>
 		</>

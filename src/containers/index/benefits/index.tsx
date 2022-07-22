@@ -1,76 +1,103 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
+import Button from '../../../components/reusable/button';
+import Images from '../../../images';
 
 const Root = styled.div`
 	padding: 32px 64px;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 `;
 
-const Title = styled.h1`
+const Title = styled.h2`
 	margin: 0;
+	font-weight: normal;
+	font-size: 50px;
+	max-width: 600px;
 `;
 
-const FooterTitle = styled.p`
-	margin: 0;
-	font-size: 24px;
+const BenefitsContainer = styled.div`
+	display: flex;
+	column-gap: 24px;
 `;
 
-const BenefitsItemsContainer = styled.div`
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	height: 100%;
-	justify-items: center;
-	align-items: center;
-`;
-
-const BenefitRoot = styled.div`
+const BenefitBox = styled.div`
+	width: 375px;
+	height: 375px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-align: center;
-	row-gap: 16px;
-	width: min-content;
-	padding: 16px;
-	border-radius: 8px;
-	box-shadow: ${props => props.theme.shadows.benefit};
-	background-color: ${props => props.theme.colors.white.full};
+	padding: 50px 0;
+	border: 1px solid black;
+	row-gap: 32px;
+`;
+
+const BenefitIcon = styled.div`
+	width: 100px;
+	height: 100px;
 `;
 
 const BenefitText = styled.p`
 	margin: 0;
-`;
-
-const BenefitIcon = styled.div`
-	height: 100px;
-	width: 100px;
-	background-color: red;
-	border-radius: 16px;
+	font-size: 30px;
+	text-align: center;
 `;
 
 const Benefits: FC<{}> = ({}) => {
-	const benefits = [
-		{ name: 'Redução de custos das estratégias de DE&I', icon: <span /> },
-		{ name: 'Censo de Diversidade escalável', icon: <span /> },
-		{ name: 'Acompanhamento do Índice de Maturidade de DE&I', icon: <span /> },
-		{ name: 'Gestão de Grupos de Afinidade', icon: <span /> },
-		{ name: 'Percentual de vagas afirmativas fechadas', icon: <span /> },
-		{ name: 'Controle de Turnover em DE&I', icon: <span /> },
-	];
-
 	return (
 		<Root>
-			<Title>Benefícios com impactos tangíveis no seu ROI:</Title>
-			<BenefitsItemsContainer>
-				{benefits.map(benefit => (
-					<BenefitRoot>
-						<BenefitIcon />
-						<BenefitText>{benefit.name}</BenefitText>
-					</BenefitRoot>
-				))}
-			</BenefitsItemsContainer>
-			<FooterTitle>Aproveite nosso valor promocional!</FooterTitle>
+			<Title>
+				Benefícios com <strong>impactos tangíveis no seu ROI.</strong>
+			</Title>
+			<BenefitsContainer>
+				<BenefitBox>
+					<BenefitIcon>
+						<Images.Icons.DownwardChart />
+					</BenefitIcon>
+					<BenefitText>
+						Reduza seus custos em
+						<br />
+						estratégias de DE&I.
+					</BenefitText>
+				</BenefitBox>
+				<BenefitBox>
+					<BenefitIcon>
+						<Images.Icons.Dialogs />
+					</BenefitIcon>
+					<BenefitText>
+						Entenda o
+						<br />
+						engajamento entre
+						<br />
+						seus colaboradores.
+					</BenefitText>
+				</BenefitBox>
+				<BenefitBox>
+					<BenefitIcon>
+						<Images.Icons.UpwardsChartWithBars />
+					</BenefitIcon>
+					<BenefitText style={{ fontSize: 25 }}>
+						Saiba como as iniciativas de
+						<br />
+						diversidade impactam na
+						<br />
+						performance seu negócio.
+					</BenefitText>
+				</BenefitBox>
+				<BenefitBox>
+					<BenefitIcon>
+						<Images.Icons.ExitDoor />
+					</BenefitIcon>
+					<BenefitText>
+						Controle o turnover da
+						<br />
+						sua empresa.
+					</BenefitText>
+				</BenefitBox>
+			</BenefitsContainer>
+			<Button>QUERO UMA AVALIAÇÃO GRÁTIS</Button>
 		</Root>
 	);
 };
