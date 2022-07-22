@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
+import { BoxedInfo } from '../../../components/reusable/boxed-info';
 import Button from '../../../components/reusable/button';
 import Images from '../../../images';
 
@@ -23,28 +24,6 @@ const BenefitsContainer = styled.div`
 	column-gap: 24px;
 `;
 
-const BenefitBox = styled.div`
-	width: 375px;
-	height: 375px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 50px 0;
-	border: 1px solid black;
-	row-gap: 32px;
-`;
-
-const BenefitIcon = styled.div`
-	width: 100px;
-	height: 100px;
-`;
-
-const BenefitText = styled.p`
-	margin: 0;
-	font-size: 30px;
-	text-align: center;
-`;
-
 const Benefits: FC<{}> = ({}) => {
 	return (
 		<Root>
@@ -52,50 +31,30 @@ const Benefits: FC<{}> = ({}) => {
 				Benefícios com <strong>impactos tangíveis no seu ROI.</strong>
 			</Title>
 			<BenefitsContainer>
-				<BenefitBox>
-					<BenefitIcon>
-						<Images.Icons.DownwardChart />
-					</BenefitIcon>
-					<BenefitText>
-						Reduza seus custos em
-						<br />
-						estratégias de DE&I.
-					</BenefitText>
-				</BenefitBox>
-				<BenefitBox>
-					<BenefitIcon>
-						<Images.Icons.Dialogs />
-					</BenefitIcon>
-					<BenefitText>
-						Entenda o
-						<br />
-						engajamento entre
-						<br />
-						seus colaboradores.
-					</BenefitText>
-				</BenefitBox>
-				<BenefitBox>
-					<BenefitIcon>
-						<Images.Icons.UpwardsChartWithBars />
-					</BenefitIcon>
-					<BenefitText style={{ fontSize: 25 }}>
-						Saiba como as iniciativas de
-						<br />
-						diversidade impactam na
-						<br />
-						performance seu negócio.
-					</BenefitText>
-				</BenefitBox>
-				<BenefitBox>
-					<BenefitIcon>
-						<Images.Icons.ExitDoor />
-					</BenefitIcon>
-					<BenefitText>
-						Controle o turnover da
-						<br />
-						sua empresa.
-					</BenefitText>
-				</BenefitBox>
+				<BoxedInfo icon={<Images.Icons.DownwardChart />}>
+					Reduza seus custos em
+					<br />
+					estratégias de DE&I.
+				</BoxedInfo>
+				<BoxedInfo icon={<Images.Icons.Dialogs />}>
+					Entenda o
+					<br />
+					engajamento entre
+					<br />
+					seus colaboradores.
+				</BoxedInfo>
+				<BoxedInfo icon={<Images.Icons.UpwardsChartWithBars />}>
+					Saiba como as iniciativas de
+					<br />
+					diversidade impactam na
+					<br />
+					performance seu negócio.
+				</BoxedInfo>
+				<BoxedInfo icon={<Images.Icons.ExitDoor />}>
+					Controle o turnover da
+					<br />
+					sua empresa.
+				</BoxedInfo>
 			</BenefitsContainer>
 			<Button>QUERO UMA AVALIAÇÃO GRÁTIS</Button>
 		</Root>

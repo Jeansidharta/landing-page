@@ -6,6 +6,7 @@ import { deployedURLHome } from '../../constants/deployed-url';
 import Header from './header';
 import Benefits from './benefits';
 import Prices from './prices';
+import { AboutUs } from './about-us';
 
 const Main = styled.div`
 	display: flex;
@@ -38,6 +39,7 @@ export default function Home() {
 				<Header />
 				<Benefits />
 				<Prices />
+				<AboutUs />
 			</Main>
 		</>
 	);
