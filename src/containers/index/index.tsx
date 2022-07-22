@@ -33,8 +33,10 @@ export default function Home() {
 				<title>Tech Viz</title>
 				<link rel="canonical" href={deployedURLHome} />
 				<script type="application/ld+json">{JSONLD}</script>
-				{/* TODO - Set custom page description */}
-				{/* <meta name="description" content="My personal description" /> */}
+				<meta
+					name="description"
+					content="Tech Viz - Solução de dados para diagnósticos de Diversidade, Equidade & Inclusão (DE&I). Trabalhamos com coleta de dados de qualidade e entregamos resultados tangíveis."
+				/>
 			</Head>
 			<Main>
 				<Header />
