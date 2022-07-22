@@ -71,9 +71,55 @@ const Images = {
 		alt: alt || `Logo da Tech Viz`,
 	}))``,
 	CapeIlustration: styled(BaseImage).attrs(({ alt }) => ({
-		imageData: ImageURLs.CapeIlustration,
+		imageData: ImageURLs.capeIlustration,
 		alt: alt || `Ilustracão da capa do software`,
 	}))``,
+	Icons: {
+		Analytics: styled(BaseImage).attrs(({ alt }) => ({
+			imageData: ImageURLs.icons.analytics,
+			alt: alt || `Ícone de Analytics`,
+		}))``,
+		Checkbox: styled(BaseImage).attrs(({ alt }) => ({
+			imageData: ImageURLs.icons.checkbox,
+			alt: alt || `Ícone de Checkbox`,
+		}))``,
+		Dialogs: styled(BaseImage).attrs(({ alt }) => ({
+			imageData: ImageURLs.icons.dialogs,
+			alt: alt || `Ícone de diálogo`,
+		}))``,
+		DownwardChart: styled(BaseImage).attrs(({ alt }) => ({
+			imageData: ImageURLs.icons.downwardChart,
+			alt: alt || `Ícone de gráficos descendo`,
+		}))``,
+		Email: styled(BaseImage).attrs(({ alt }) => ({
+			imageData: ImageURLs.icons.email,
+			alt: alt || `Ícone de email`,
+		}))``,
+		ExitDoor: styled(BaseImage).attrs(({ alt }) => ({
+			imageData: ImageURLs.icons.exitDoor,
+			alt: alt || `Ícone de saída`,
+		}))``,
+		LocationPint: styled(BaseImage).attrs(({ alt }) => ({
+			imageData: ImageURLs.icons.locationPint,
+			alt: alt || `Ícone de localizacão`,
+		}))``,
+		Medal: styled(BaseImage).attrs(({ alt }) => ({
+			imageData: ImageURLs.icons.medal,
+			alt: alt || `Ícone de medalha`,
+		}))``,
+		Research: styled(BaseImage).attrs(({ alt }) => ({
+			imageData: ImageURLs.icons.research,
+			alt: alt || `Ícone de pesquisa`,
+		}))``,
+		UpwardsChartWithBars: styled(BaseImage).attrs(({ alt }) => ({
+			imageData: ImageURLs.icons.upwardsChartWithBars,
+			alt: alt || `Ícone de gráfico de barras subindo`,
+		}))``,
+		Whatsapp: styled(BaseImage).attrs(({ alt }) => ({
+			imageData: ImageURLs.icons.whatsapp,
+			alt: alt || `Ícone de whatsapp`,
+		}))``,
+	},
 };
 
 export default Images;
