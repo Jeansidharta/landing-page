@@ -103,8 +103,8 @@ const Images = {
 			imageData: ImageURLs.icons.exitDoor,
 			alt: alt || `Ícone de saída`,
 		}))``,
-		LocationPint: styled(BaseImage).attrs(({ alt }) => ({
-			imageData: ImageURLs.icons.locationPint,
+		LocationPin: styled(BaseImage).attrs(({ alt }) => ({
+			imageData: ImageURLs.icons.locationPin,
 			alt: alt || `Ícone de localizacão`,
 		}))``,
 		Medal: styled(BaseImage).attrs(({ alt }) => ({

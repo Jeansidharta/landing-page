@@ -7,6 +7,7 @@ import Header from './header';
 import Benefits from './benefits';
 import Prices from './prices';
 import { AboutUs } from './about-us';
+import { Contact } from './contact';
 
 const Main = styled.div`
 	display: flex;
@@ -40,6 +41,7 @@ export default function Home() {
 				<Benefits />
 				<Prices />
 				<AboutUs />
+				<Contact />
 			</Main>
 		</>
 	);
