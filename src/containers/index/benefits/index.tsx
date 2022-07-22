@@ -43,7 +43,7 @@ const Benefits: FC<{}> = ({}) => {
 					<br />
 					seus colaboradores.
 				</BoxedInfo>
-				<BoxedInfo icon={<Images.Icons.UpwardsChartWithBars />}>
+				<BoxedInfo style={{ fontSize: 25 }} icon={<Images.Icons.UpwardsChartWithBars />}>
 					Saiba como as iniciativas de
 					<br />
 					diversidade impactam na

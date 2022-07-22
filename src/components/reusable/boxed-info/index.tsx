@@ -1,5 +1,5 @@
 import React, { FC, PropsWithChildren, ReactNode } from 'react';
-import styled from 'styled-components';
+import styled, { CSSProperties } from 'styled-components';
 
 const Root = styled.div`
 	width: 375px;
@@ -10,6 +10,7 @@ const Root = styled.div`
 	padding: 50px 0;
 	border: 1px solid black;
 	row-gap: 32px;
+	font-size: 30px;
 `;
 
 const Icon = styled.div`
@@ -19,13 +20,17 @@ const Icon = styled.div`
 
 const Text = styled.p`
 	margin: 0;
-	font-size: 30px;
 	text-align: center;
+	font-size: inherit;
 `;
 
-export const BoxedInfo: FC<PropsWithChildren<{ icon: ReactNode }>> = ({ children, icon }) => {
+export const BoxedInfo: FC<PropsWithChildren<{ icon: ReactNode; style?: CSSProperties }>> = ({
+	children,
+	icon,
+	style,
+}) => {
 	return (
-		<Root>
+		<Root style={style}>
 			<Icon>{icon}</Icon>
 			<Text>{children}</Text>
 		</Root>

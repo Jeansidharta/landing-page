@@ -76,19 +76,19 @@ export const AboutUs: FC<{}> = ({}) => {
 				em dados de qualidade.”
 			</Quote>
 			<AchievmentsContainer>
-				<BoxedInfo icon={<Images.Icons.Medal />}>
+				<BoxedInfo style={{ fontSize: 25 }} icon={<Images.Icons.Medal />}>
 					Pioneira em DE&I Analytics
 					<br />
 					no Brasil.
 				</BoxedInfo>
-				<BoxedInfo icon={<Images.Icons.Research />}>
+				<BoxedInfo style={{ fontSize: 25 }} icon={<Images.Icons.Research />}>
 					A única solução com pesquisa
 					<br />
 					científica aplicada ao conceito
 					<br />
 					de Creating Shared Value.
 				</BoxedInfo>
-				<BoxedInfo icon={<Images.Icons.Analytics />}>
+				<BoxedInfo style={{ fontSize: 25 }} icon={<Images.Icons.Analytics />}>
 					Conectamos DE&I à<br />
 					perfomance e ROI da sua
 					<br />
