@@ -74,6 +74,10 @@ const Images = {
 		imageData: ImageURLs.capeIlustration,
 		alt: alt || `Ilustracão da capa do software`,
 	}))``,
+	Prices: styled(BaseImage).attrs(({ alt }) => ({
+		imageData: ImageURLs.prices,
+		alt: alt || `Precos do Software`,
+	}))``,
 	Icons: {
 		Analytics: styled(BaseImage).attrs(({ alt }) => ({
 			imageData: ImageURLs.icons.analytics,

@@ -2,6 +2,7 @@ import logo from './tech_viz_logo.svg';
 import logoPng from './tech_viz_logo.png';
 import logoSquaredPng from './tech_viz_logo_squared.png';
 import capeIlustration from './cape-ilustration.svg';
+import prices from './prices.svg';
 
 // Icons
 import analytics from './icons/analytics.svg';
@@ -27,6 +28,7 @@ const ImageURLs = {
 	logoPng,
 	logoSquaredPng,
 	capeIlustration,
+	prices,
 
 	icons: {
 		analytics,

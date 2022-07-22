@@ -5,6 +5,7 @@ import ImageURLs from '../../images/image-urls';
 import { deployedURLHome } from '../../constants/deployed-url';
 import Header from './header';
 import Benefits from './benefits';
+import Prices from './prices';
 
 const Main = styled.div`
 	display: flex;
@@ -36,7 +37,7 @@ export default function Home() {
 			<Main>
 				<Header />
 				<Benefits />
-				{/* <Prices /> */}
+				<Prices />
 			</Main>
 		</>
 	);

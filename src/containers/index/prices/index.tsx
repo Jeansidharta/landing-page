@@ -1,37 +1,84 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import Button from '../../../components/reusable/button';
+import Images from '../../../images';
 
 const Root = styled.div`
-	height: 100vh;
-	padding: 32px 64px;
-	display: grid;
-	grid-template-columns: 50% 50%;
+	padding: 67px 75px;
+	display: flex;
+	flex-direction: column;
 `;
 
-const PriceContainer = styled.div``;
+const Title = styled.h2`
+	maring: 0;
+	font-size: 50px;
+	font-weight: normal;
+`;
 
-const CallToActionContainer = styled.div``;
+const SecondTitle = styled.p`
+	maring: 0;
+	font-size: 50px;
+	font-weight: bold;
+`;
 
-const CallToActionText = styled.p``;
+const PricesImage = styled(Images.Prices)`
+	max-width: 800px;
+	align-self: center;
+	margin-bottom: 60px;
+`;
 
-const Price = styled.p`
+const BenefitsContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	row-gap: 16px;
+	margin-bottom: 90px;
+`;
+
+const Benefit = styled.p`
+	font-size: 30px;
 	margin: 0;
+	display: flex;
+	align-items: center;
+`;
+
+const Checkbox = styled(Images.Icons.Checkbox)`
+	width: 25px;
+	height: 25px;
+	margin-right: 32px;
+	position: relative;
+	bottom: 2px;
 `;
 
 const Prices: FC<{}> = ({}) => {
 	return (
 		<Root>
-			<CallToActionContainer>
-				<CallToActionText>
-					Você poderá ter nosso Censo de DE&I e entrevistas com as lideranças de sua empresa por
-					apenas 4,99 por colaborador. Aproveite que é por pouco tempo!
-				</CallToActionText>
-				<Button>Agendar Consultoria Grátis</Button>
-			</CallToActionContainer>
-			<PriceContainer>
-				<Price>R$ 9,99</Price>
-			</PriceContainer>
+			<Title>
+				Implemente o que há de <strong>mais inovador</strong> em
+				<br />
+				<strong>gestão de pessoas</strong> para <strong>aumento de performance.</strong>
+			</Title>
+			<SecondTitle>DE&I as a Service:</SecondTitle>
+			<PricesImage />
+			<BenefitsContainer>
+				<Benefit>
+					<Checkbox /> Censo de Diversidade escalável.
+				</Benefit>
+				<Benefit>
+					<Checkbox /> Dashboard e relatórios de dados comparáveis.
+				</Benefit>
+				<Benefit>
+					<Checkbox /> Acompanhamento do Índice de Maturidade de DE&I
+				</Benefit>
+				<Benefit>
+					<Checkbox /> Métricas e KPIs de People/DE&I Analytics.
+				</Benefit>
+				<Benefit>
+					<Checkbox /> Score Promocional: desempenho e expertise
+					<br />
+					orientado por dados.
+				</Benefit>
+			</BenefitsContainer>
+			<Button>QUERO UMA AVALIAÇÃO GRÁTIS</Button>
 		</Root>
 	);
 };

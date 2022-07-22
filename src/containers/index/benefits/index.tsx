@@ -4,7 +4,7 @@ import Button from '../../../components/reusable/button';
 import Images from '../../../images';
 
 const Root = styled.div`
-	padding: 32px 64px;
+	padding: 67px 75px;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
