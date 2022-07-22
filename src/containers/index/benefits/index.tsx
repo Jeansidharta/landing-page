@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import { BoxedInfo } from '../../../components/reusable/boxed-info';
-import Button from '../../../components/reusable/button';
+import { FreeAvaliation } from '../../../components/reusable/free-avaliation';
 import Images from '../../../images';
 
 const Root = styled.div`
@@ -56,7 +56,7 @@ const Benefits: FC<{}> = ({}) => {
 					sua empresa.
 				</BoxedInfo>
 			</BenefitsContainer>
-			<Button>QUERO UMA AVALIAÇÃO GRÁTIS</Button>
+			<FreeAvaliation />
 		</Root>
 	);
 };

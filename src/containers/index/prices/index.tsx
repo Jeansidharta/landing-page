@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import Button from '../../../components/reusable/button';
+import { FreeAvaliation } from '../../../components/reusable/free-avaliation';
 import Images from '../../../images';
 
 const Root = styled.div`
@@ -78,7 +78,7 @@ const Prices: FC<{}> = ({}) => {
 					orientado por dados.
 				</Benefit>
 			</BenefitsContainer>
-			<Button>QUERO UMA AVALIAÇÃO GRÁTIS</Button>
+			<FreeAvaliation />
 		</Root>
 	);
 };

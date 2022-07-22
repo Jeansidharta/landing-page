@@ -22,6 +22,7 @@ const Root = styled.button<{
 	cursor: pointer;
 	border-radius: 4px;
 	font-size: 25px;
+	text-decoration: none;
 	background-color: ${({ backgroundColor, theme }) =>
 		typeof backgroundColor === `string` ? backgroundColor : backgroundColor(theme)};
 	color: ${({ textColor, theme }) =>
@@ -52,6 +53,8 @@ const Button: FC<
 
 		/** Whether the button should show a spinner icon */
 		isLoading?: boolean;
+
+		isLink?: boolean;
 	}> &
 		React.ComponentProps<'button'>
 > = ({
@@ -62,10 +65,12 @@ const Button: FC<
 	ref,
 	children,
 	isLoading,
+	isLink,
 	...props
 }) => {
 	return (
 		<Root
+			as={isLink ? ('a' as any) : undefined}
 			fullWidth={fullWidth}
 			hoverScaleOffset={hoverScaleOffset}
 			textColor={textColor}

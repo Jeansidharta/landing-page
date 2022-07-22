@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import Button from '../../../components/reusable/button';
+import { FreeAvaliation } from '../../../components/reusable/free-avaliation';
 import Images from '../../../images';
 
 const Root = styled.div`
@@ -83,7 +83,7 @@ const Header: FC<{}> = ({}) => {
 						Faça a <strong>gestão de DE&I</strong> da sua empresa{' '}
 						<strong>orientada por dados</strong> com a <strong>Tech Viz!</strong>
 					</Text>
-					<Button>QUERO UMA AVALIAÇÃO GRÁTIS</Button>
+					<FreeAvaliation />
 				</Left>
 				<Right>
 					<CapeIlustration />
